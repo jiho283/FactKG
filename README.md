@@ -44,6 +44,9 @@ We created a DB by preprocessing DBpedia 2015 version. DBpedia is a directed gra
 
 The KG is stored in the form of a dictionary in ```dbpedia_2015_undirected.pickle``` file. 
 
+We also release a subset of DBpedia (named 'dbpedia_2015_undirected_light.pickle') by selecting only the relations used in FactKG among the triples of DBpedia. You can also use it as a whole KG.
+
+
 ```
 with open('dbpedia_2015_undirected.pickle', 'rb') as f:
     dbpedia = pickle.load(f)
