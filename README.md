@@ -56,5 +56,13 @@ with open('dbpedia_2015_undirected.pickle', 'rb') as f:
 3) ```dbpedia[entity][relation]``` returns the list of the tails that are connected to the entity with the relation.
 4) There are also reversed relations (they contain '~' in front of the relations). For example, the entity 'Korean_language' is in dbpedia['Korea']['language'] and the entity 'Korea' is in dbpedia['Korean_language']['~language'].
 
+
 ## Baseline
-We will release the code soon!
+### Claim only
+
+1. BERT: ```python bert_classification.py --model_name bert-base-uncased --exp_name bert_log --train_data_path /path/to/factkg_train.pickle --valid_data_path /path/to/factkg_test.pickle --scheduler linear --batch_size 64 --eval_batch_size 64 --total_epoch 3```
+2. BlueBERT: ```python bert_classification.py --model_name bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12 --exp_name bluebert_log --train_data_path /path/to/factkg_train.pickle --valid_data_path /path/to/factkg_test.pickle --scheduler linear --batch_size 64 --eval_batch_size 64 --total_epoch 3```
+3. Flan-T5: ```python flan_xl_zeroshot.py --valid_data_path /path/to/factkg_test.pickle --model_name google/flan-t5-xl```
+
+### With Evidence
+We will release soon!
