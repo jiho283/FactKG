@@ -58,6 +58,8 @@ with open('dbpedia_2015_undirected.pickle', 'rb') as f:
 
 
 ## Baseline
+By correcting some errors in the dataset, the baseline performance may differ from the paper.
+
 ### Claim only
 
 1. BERT: ```python bert_classification.py --model_name bert-base-uncased --exp_name bert_log --train_data_path /path/to/factkg_train.pickle --valid_data_path /path/to/factkg_test.pickle --scheduler linear --batch_size 64 --eval_batch_size 64 --total_epoch 3```
