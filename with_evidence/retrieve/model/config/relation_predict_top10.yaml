@@ -1,0 +1,8 @@
+data_path: '../total_data.pkl'
+relation_path: './relations_for_final.pickle'
+model_name: 'bert-base-uncased'
+eval_batch_size: 125
+train_batch_size: 125
+max_input_length: 512
+max_epoch: 10
+top_k: 10
