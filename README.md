@@ -103,3 +103,8 @@ Step 3) train hop predictor
 1. ```cd classifier```
 
 2. ```python baseline.py --data_path <<<directory path where factkg_{train, dev, test}.pickle are located>>> --kg_path /path/to/dbpedia_2015_undirected_light.pickle```
+
+
+
+## License
+CC BY-NC-SA 4.0
